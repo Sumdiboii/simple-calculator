@@ -1,0 +1,148 @@
+body {
+background-color: #4b3e9a; /* Light blue background color */
+
+margin: 50;
+padding: 0;
+}
+
+h1 {
+text-align: center;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 300%;
+margin-top: 2%;
+background-color: #0a0202;
+color: rgb(211, 184, 184);
+border: 2px solid black; /* Add black border */
+border-radius: 30px; /* Add border radius for rounded corners */
+
+box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); /* Add box shadow for beveled edge effect */
+padding: 20px;
+}
+
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh; /* Set the container height to the full height of the viewport */
+}
+
+.calculator {
+width: 40%;
+margin-top: 2%; /* Adjust top margin as needed */
+background-color: black; /* Black backdrop */
+padding: 20px;
+border-radius: 10px;
+border: 2px solid black; /* Add black border */
+box-shadow: 0 0 130px rgba(0, 0, 0, 0.3); /* Add box shadow for beveled edge effect */
+}
+
+.display {
+background-color: #212121;
+color: #fff;
+padding: 20px;
+text-align: right;
+font-size: 2em;
+margin-bottom: 20px;
+border: 2px solid black; /* Add black border */
+border-radius: 10px; /* Add border radius for rounded corners */
+}
+
+.keys {
+
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 10px;
+border: 2px solid black; /* Add black border */
+border-radius: 10px; /* Add border radius for rounded corners */
+}
+
+button {
+padding: 20px;
+font-size: 1.5em;
+border: none;
+cursor: pointer;
+border: 2px solid black; /* Add black border */
+border-radius: 10px; /* Add border radius for rounded corners */
+}
+
+.dark-gray {
+background-color: #424242;
+color: #fff;
+}
+
+.orange {
+background-color: #ff9800;
+color: #fff;
+}
+
+button:hover {
+opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .calculator {
+    width: 60%;
+  }
+}
+
+@media (max-width: 900px) {
+  .calculator {
+    width: 80%;
+    padding: 15px;
+  }
+  .display {
+    font-size: 1.5em;
+    padding: 15px;
+  }
+  button {
+    font-size: 1.2em;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5em;
+    padding: 10px;
+  }
+  .container {
+    height: auto;
+    padding: 10px 0;
+  }
+  .calculator {
+    width: 98%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 6px;
+  }
+  .display {
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 6px;
+  }
+  .keys {
+    grid-gap: 6px;
+    border-radius: 6px;
+  }
+  button {
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 6px;
+  }
+}
+
+@media (max-width: 400px) {
+  .calculator {
+    width: 100%;
+    padding: 5px;
+  }
+  .display {
+    font-size: 0.8em;
+    padding: 6px;
+  }
+  button {
+    font-size: 0.8em;
+    padding: 6px;
+  }
+}
